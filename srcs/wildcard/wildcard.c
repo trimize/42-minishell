@@ -80,10 +80,8 @@ int	ft_int_strchr(const char *s, int c)
 void	fill_ba(char **b, char **a, char *input)
 {
 	int	i;
-	int	j;
 
 	i = 0;
-	j = 0;
 	*b = ft_strdup("");
 	*a = ft_strdup("");
 	while (input[i] != '*')
