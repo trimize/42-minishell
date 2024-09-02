@@ -19,7 +19,7 @@ void	env(t_sh *shell)
 
 void	set_env(t_sh *shell)
 {
-	copy_tab(&shell->env, __environ);
+	copy_tab(&shell->env, ENVIRON);
 	shell->variables = (char **)malloc(2 * sizeof(char *));
 	if (!shell->variables)
 		return ;
