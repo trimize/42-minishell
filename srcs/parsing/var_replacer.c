@@ -61,10 +61,8 @@ void	replace_var(t_sh *sh, char ***tab)
 {
 	int		i;
 	int		index;
-	char	*tmp;
 
 	i = 0;
-	tmp = NULL;
 	while ((*tab)[i])
 	{
 		index = ft_int_strchr((*tab)[i], '$');
