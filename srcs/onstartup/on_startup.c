@@ -110,12 +110,10 @@ void	get_input(t_sh *sh)
 char	*get_a_line(char *filename, int line_number)
 {
 	int		fd;
-	int		i;
 	int		current_line_number;
 	char	*line;
 
 	current_line_number = 0;
-	i = -1;
 	fd = open(filename, O_RDONLY);
 	if (line_number > 128)
 		line_number = 128;
