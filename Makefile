@@ -16,7 +16,7 @@ OBJECTS = $(patsubst $(SRCSDIR)%.c, $(OBJDIR)%.o, $(SOURCES))
 OBJECTS := $(patsubst $(GNLDIR)%.c, $(OBJDIR)%.o, $(OBJECTS))
 
 CC = cc
-LDFLAGS := -lreadline -lncurses
+LDFLAGS := $(shell pkg-config --libs readline ncurses)
 CFLAGS = -Wall -Wextra -Werror -I$(INCDIR) -I$(GNLDIR) -g3
 
 all: $(NAME)
