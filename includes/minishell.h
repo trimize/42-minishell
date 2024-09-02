@@ -24,7 +24,7 @@
 # include <sys/stat.h>
 # include <unistd.h>
 # include <dirent.h>
-# include <wait.h>
+# include <sys/wait.h>
 # include <errno.h>
 
 # define RED "\033[1;31m"
