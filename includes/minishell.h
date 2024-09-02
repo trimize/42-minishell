@@ -6,7 +6,7 @@
 /*   By: trimize <trimize@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 22:47:28 by trimize           #+#    #+#             */
-/*   Updated: 2024/09/02 17:51:19 by trimize          ###   ########.fr       */
+/*   Updated: 2024/09/02 17:54:41 by trimize          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # include <termios.h>
 # include <stdio.h>
 # include <curses.h>
-# include <term.h>
 # include <readline/readline.h>
 # include <readline/history.h>
 # include <sys/types.h>
