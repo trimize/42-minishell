@@ -60,11 +60,9 @@ void	replace_env_helper(char ***str, t_sh *sh)
 
 void	replace_env(char **str, t_sh *sh)
 {
-	int		i;
 	int		j;
 	int		tmp;
 
-	i = 0;
 	j = has_dollar_sign(*str);
 	while (j != -1)
 	{	
