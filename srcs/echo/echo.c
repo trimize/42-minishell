@@ -6,7 +6,7 @@
 /*   By: trimize <trimize@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 23:24:42 by mbrandao          #+#    #+#             */
-/*   Updated: 2024/06/07 18:39:22 by trimize          ###   ########.fr       */
+/*   Updated: 2024/09/02 17:48:01 by trimize          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	echo_helper_2(t_sh *sh, char **str, char **args)
 	}
 }
 
-char	*echo(char **args, t_sh *sh)
+char	*echo_sh(char **args, t_sh *sh)
 {
 	char	*str;
 

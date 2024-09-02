@@ -6,7 +6,7 @@
 /*   By: trimize <trimize@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 22:47:28 by trimize           #+#    #+#             */
-/*   Updated: 2024/06/07 18:34:09 by trimize          ###   ########.fr       */
+/*   Updated: 2024/09/02 17:47:25 by trimize          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -332,7 +332,7 @@ void	count_args_4(char const *str, t_c_args *c);
 //Built-in functions
 void	pwd(void);
 int		cd(t_sh *sh, char *folder);
-char	*echo(char **args, t_sh *sh);
+char	*echo_sh(char **args, t_sh *sh);
 void	export(t_sh *shell, char **str);
 void	un_set(t_sh *shell, char **str);
 void	env(t_sh *shell);

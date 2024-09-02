@@ -6,7 +6,7 @@
 /*   By: trimize <trimize@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 19:09:24 by trimize           #+#    #+#             */
-/*   Updated: 2024/06/07 13:32:39 by trimize          ###   ########.fr       */
+/*   Updated: 2024/09/02 17:47:42 by trimize          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void	echo_parent_4(t_sh *sh, t_exe *exe, char **args)
 	if (sh->out_par)
 		(dup2(sh->fd_output, STDOUT_FILENO));
 	dup2(sh->true_stdin, STDIN_FILENO);
-	exe->str = echo(args, sh);
+	exe->str = echo_sh(args, sh);
 	sh->last_cmd_st = 0;
 	sh->bool_result = 1;
 	if (ft_equalstr(args[find_sp_echo(args, sh)], ">")
