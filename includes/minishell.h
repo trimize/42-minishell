@@ -27,6 +27,14 @@
 # include <sys/wait.h>
 # include <errno.h>
 
+#if defined(__GLIBC__)
+extern char **__environ;
+#define ENVIRON __environ
+#else
+extern char **environ;
+#define ENVIRON environ
+#endif
+
 # define RED "\033[1;31m"
 # define ORANGE "\e[0;91m"
 # define YELLOW "\033[1;33m"
