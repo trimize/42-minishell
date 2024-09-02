@@ -18,6 +18,7 @@
 # include <signal.h>
 # include <termios.h>
 # include <stdio.h>
+# include <curses.h>
 # include <readline/readline.h>
 # include <readline/history.h>
 # include <sys/types.h>
