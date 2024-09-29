@@ -41,8 +41,6 @@ int	get_random_number(void)
 		return (ft_putstr_fd("Couldn't open /dev/random\n", 2), 50);
 	read(fd_random, &random, 1);
 	close(fd_random);
-	if (random < 0)
-		random *= -1;
 	random = random % 127;
 	if (random <= 0)
 		random = 1;

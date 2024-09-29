@@ -16,7 +16,7 @@ OBJECTS = $(patsubst $(SRCSDIR)%.c, $(OBJDIR)%.o, $(SOURCES))
 OBJECTS := $(patsubst $(GNLDIR)%.c, $(OBJDIR)%.o, $(OBJECTS))
 
 CC = cc
-LDFLAGS := -lreadline -lncurses
+LDFLAGS = -L$(LIBFT_PATH) -lft -lreadline -lhistory
 CFLAGS = -Wall -Wextra -Werror -I$(INCDIR) -I$(GNLDIR) -g3
 
 all: $(NAME)
@@ -25,7 +25,7 @@ bonus: $(NAME)
 
 $(NAME): $(LIBFT) $(OBJECTS)
 	@echo "Linking $@"
-	@$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $(OBJECTS) -L$(LIBFT_PATH) -lft
+	@$(CC) $(CFLAGS) -o $@ $(OBJECTS) $(LDFLAGS)
 	@echo "$@ has been successfully built!"
 
 $(LIBFT):
